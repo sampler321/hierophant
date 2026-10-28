@@ -30,6 +30,7 @@
   --pad-y: 9px;
   --pad-x: 12px;
   --content-width: 720px;
+  --links-gap: 24px;
 }
 
 body {
@@ -55,6 +56,7 @@ b {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; /*vertical align*/
   gap: 8px;
@@ -85,10 +87,6 @@ footer {
 
 a {
   color: var(--link); /* normal */
-  padding: 20px;
-  background-color: #ffffff;
-  font-weight: bold;
-  font-size: 25px;
   font-family: monocraft;
 }
 

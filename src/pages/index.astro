@@ -1,43 +1,34 @@
 ---
-import '../styles/globals.css';
-import { Image } from 'astro:assets';
-import bobby from '../assets/bobby.jpg';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import bobby from "../assets/bobby.jpg";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>This is the title</title>
-  </head>
-  <body>
-    <header>
-      <a href="/">✨ Amazing Web Site ✨</a>
-    </header>
+<Layout title="AwesomeWebSite">
+  <h1>Hi, fellow kids!</h1>
 
-    <main>
-      <h1>Hi, fellow kids!</h1>
-      <p>I'm going to be shitposting here.<br>Don't worry, I'm not going to leave it like this. <br><b>Look, I even styled bold text!</b></p>
-      <p>Planned:</p>
-      <ul>
-        <li>A music section...</li>
-        <li>A blog section...</li>
-        <li>A photos section...</li>
-      </ul>
-      <ol>
-        <li>And...</li>
-        <li>Much...</li>
-        <li>More...</li>
-      </ol>
+  <p>
+    I'm going to be shitposting here.
+    <br />
+    Don't worry, I'm not going to leave it like this. <br />
+    <b>Look, I even styled bold text!</b>
+  </p>
 
-      <blockquote> ✨💕 MAKE THE INTERNET GREAT AGAIN 💕✨</blockquote>
-      <Image src={bobby} alt="Bobby's got a website."/>
-    </main> 
+  <p>Planned:</p>
 
+  <ul>
+    <li>A music section...</li>
+    <li>A blog section...</li>
+    <li>A photos section...</li>
+  </ul>
 
-    <footer>
-      <p>👀</p>
-    </footer>
-  </body>
-</html>
+  <ol>
+    <li>And...</li>
+    <li>Much...</li>
+    <li>More...</li>
+  </ol>
+
+  <blockquote>✨💕 MAKE THE INTERNET GREAT AGAIN 💕✨</blockquote>
+
+  <Image src={bobby} alt="Bobby's got a website." />
+</Layout>

@@ -1,0 +1,43 @@
+<header>
+  <a class="site-title" href="/">
+    ✨ Amazing Web Site ✨
+  </a>
+  <nav>
+    <a href="/music">Music 🎵</a>
+    <a href="/photos">Photos 📷</a>
+    <a href="/blog">Blog ✏️</a>
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .site-title {
+    padding: 20px;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: monocraft;
+  }
+
+  nav a {
+    color: #ffffff;
+    font-size: 20px;
+    background-color: black;
+    padding: var(--pad-x) var(--pad-y);
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    gap: var(--links-gap);
+  }
+</style>
