@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Monocraft";
+  src: url("/fonts/Monocraft.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monocraft";
+  src: url("/fonts/Monocraft-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+}
+
+:root {
+  /* colours */
+  --text: #ffffff;
+  --text-bold: #001aff; /* pick your bold colour */
+  --text-bold-background: #ffffff;
+  --bg: #eeeeee;
+  --link: #b48cff;
+  --line: #cfcfd0;
+  --accent: #ffffff; /* quote stroke */
+
+  /* fonts */
+  --font-body: "Cozette", monospace;
+  --font-heading: "Monocraft", monospace;
+
+  /* spacing */
+  --pad-y: 9px;
+  --pad-x: 12px;
+}
+
+body {
+  font-family: monospace;
+  font-size: 16px; /* 75% scale: 1.5 × Cozette's 13px grid (crisp on retina) */
+  line-height: 29.5px; /* half-pixel steps land on whole retina pixels */
+  -webkit-font-smoothing: none;
+  margin: 0;
+  min-height: 100vh; /* page is at least screen-tall */
+  display: flex;
+  flex-direction: column; /* stack header, main, footer vertically */
+  color: var(--text);
+  background: url("/tiles/spacebackground.gif") repeat;
+}
+
+b {
+  color: var(--text-bold);
+  background: var(--text-bold-background);
+  padding: 3px 4px;
+}
+
+header {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+main {
+  flex: 1; /* main takes all leftover space... */
+  padding: 12px;
+}
+
+footer {
+  padding: 9px 12px; /* ...which pushes the footer to the bottom */
+  border-top: 1px solid var(--line);
+}
+
+a {
+  color: var(--link); /* normal */
+}
+
+h1 {
+  font-family: "Monocraft", monospace;
+  font-size: 27px; /* 3 × Monocraft's 9px grid */
+  line-height: 36px; /* 4 × 9 */
+  margin: 20px 0; /* default 0.67em lands on fractional pixels */
+}
+
+blockquote {
+  margin: 0 0 20px; /* drop the browser's 40px side indent */
+  padding-left: 12px; /* space between stroke and text */
+  border-left: 3px solid var(--accent); /* the stroke */
+}
