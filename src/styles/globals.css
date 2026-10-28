@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Monocraft";
-  src: url("/fonts/Monocraft.ttf") format("truetype");
+  src: url("/hierophant/fonts/Monocraft.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Monocraft";
-  src: url("/fonts/Monocraft-Bold.ttf") format("truetype");
+  src: url("/hierophant/fonts/Monocraft-Bold.ttf") format("truetype");
   font-weight: bold;
   font-display: swap;
 }
@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-direction: column; /* stack header, main, footer vertically */
   color: var(--text);
-  background: url("/tiles/spacebackground.gif") repeat;
+  background: url("/hierophant/tiles/spacebackground.gif") repeat;
   align-items: left;
 }
 
