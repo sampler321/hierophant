@@ -1,0 +1,46 @@
+<div id="winamp"></div>
+
+<script src="https://unpkg.com/webamp"></script>
+<script>
+  const winamp = document.getElementById("winamp");
+  // CC0 tracks from opengameart.org, files in public/music/
+  const webamp = new Webamp({
+    initialTracks: [
+      {
+        metaData: { artist: "HydroGene", title: "8-bit Mechanical Complex" },
+        url: "/hierophant/music/mechanical-complex.mp3",
+      },
+      {
+        metaData: { artist: "HydroGene", title: "Rush Point" },
+        url: "/hierophant/music/rush-point.mp3",
+      },
+      {
+        metaData: { artist: "Spring Spring", title: "Scheatt" },
+        url: "/hierophant/music/scheatt.mp3",
+      },
+      {
+        metaData: { artist: "tamesu", title: "Short 8-bit Music" },
+        url: "/hierophant/music/short-8-bit.mp3",
+      },
+    ],
+  });
+  webamp.renderInto(winamp); // draws inside #winamp instead of over the page
+</script>
+
+<style>
+  #winamp {
+    --scale: 1.5;
+    zoom: var(--scale); /* scales the whole player, playlist included */
+    position: relative; /* renderInto needs a non-static box */
+    width: 275px; /* exactly one Winamp window wide (before zoom) */
+    height: 348px; /* main + EQ + playlist, 116px each (before zoom) */
+    margin: 0 auto; /* center the box, and the player with it */
+  }
+
+  /* 1.5x is 412px wide, too wide for phones, so use normal size there */
+  @media (max-width: 440px) {
+    #winamp {
+      --scale: 1;
+    }
+  }
+</style>

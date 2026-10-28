@@ -1,0 +1,66 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "✨ Amazing Web Site ✨" [ref=e3] [cursor=pointer]:
+      - /url: /hierophant
+    - navigation [ref=e4]:
+      - link "Music 🎵" [ref=e5] [cursor=pointer]:
+        - /url: /hierophant/music
+      - link "Photos 📷" [ref=e6] [cursor=pointer]:
+        - /url: /hierophant/photos
+      - link "Blog ✏️" [ref=e7] [cursor=pointer]:
+        - /url: /hierophant/blog
+  - main [ref=e8]:
+    - heading "Music" [level=1] [ref=e9]
+    - paragraph [ref=e10]: This is the music section.
+  - contentinfo [ref=e12]:
+    - paragraph [ref=e13]: 👀
+  - application:
+    - generic:
+      - generic:
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - generic "Winamp Menu" [ref=e19]
+            - generic "Minimize" [ref=e20]
+            - generic "Toggle Windowshade Mode" [ref=e21]
+            - generic "Close" [ref=e22]
+          - generic "Toggle Doublesize Mode" [ref=e29]
+          - generic "Song Title" [ref=e32]:
+            - generic [ref=e33]:
+              - generic [ref=e34]: W
+              - generic [ref=e35]: i
+              - generic [ref=e36]: "n"
+              - generic [ref=e37]: a
+              - generic [ref=e38]: m
+              - generic [ref=e39]: p
+              - generic [ref=e41]: "2"
+              - generic [ref=e42]: .
+              - generic [ref=e43]: "9"
+              - generic [ref=e44]: "1"
+          - slider "Volume Bar" [ref=e69]: "78"
+          - slider "Balance" [ref=e70]: "0"
+          - generic [ref=e71]:
+            - generic "Toggle Graphical Equalizer" [ref=e72]
+            - generic "Toggle Playlist Editor" [ref=e73]
+          - slider "Seeking Bar" [ref=e74]: "0"
+          - generic:
+            - generic "Previous Track" [ref=e75]
+            - generic "Play" [ref=e76]
+            - generic "Pause" [ref=e77]
+            - generic "Stop" [ref=e78]
+            - generic "Next Track" [ref=e79]
+          - generic "Open File(s)" [ref=e80]
+          - generic:
+            - generic "Toggle Shuffle" [ref=e81]
+            - generic "Toggle Repeat" [ref=e82]
+          - link "About" [ref=e83] [cursor=pointer]:
+            - /url: https://webamp.org/about
+        - generic [ref=e117]:
+          - generic [ref=e118]: "0"
+          - generic [ref=e119]: ":"
+          - generic [ref=e120]: "0"
+          - generic [ref=e121]: "0"
+          - generic [ref=e122]: /
+          - generic [ref=e123]: "0"
+          - generic [ref=e124]: ":"
+          - generic [ref=e125]: "0"
+          - generic [ref=e126]: "0"
