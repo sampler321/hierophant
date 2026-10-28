@@ -1,5 +1,7 @@
 ---
 import '../styles/globals.css';
+import { Image } from 'astro:assets';
+import bobby from '../assets/bobby.jpg';
 ---
 
 <!doctype html>
@@ -11,26 +13,31 @@ import '../styles/globals.css';
   </head>
   <body>
     <header>
-      <a href="/">This is the title</a>
+      <a href="/">✨ Amazing Web Site ✨</a>
     </header>
 
     <main>
-      <h1>This is what H1 looks like.</h1>
-      <p>This is the description.<br>I'm just writing another line, <b>this is what that looks like.</b></p>
-      <p>And this is another paragraph.</p>
+      <h1>Hi, fellow kids!</h1>
+      <p>I'm going to be shitposting here.<br>Don't worry, I'm not going to leave it like this. <br><b>Look, I even styled bold text!</b></p>
+      <p>Planned:</p>
       <ul>
-        <li>This is first bullet...</li>
-        <li>This is second bullet...</li>
+        <li>A music section...</li>
+        <li>A blog section...</li>
+        <li>A photos section...</li>
       </ul>
       <ol>
-        <li>First point...</li>
-        <li>Second point...</li>
+        <li>And...</li>
+        <li>Much...</li>
+        <li>More...</li>
       </ol>
-      <blockquote><em>This is a quote.</em></blockquote>
-    </main>
+
+      <blockquote> ✨💕 MAKE THE INTERNET GREAT AGAIN 💕✨</blockquote>
+      <Image src={bobby} alt="Bobby's got a website."/>
+    </main> 
+
 
     <footer>
-      <p>© 2026</p>
+      <p>👀</p>
     </footer>
   </body>
 </html>

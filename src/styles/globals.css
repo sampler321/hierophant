@@ -13,20 +13,23 @@
 :root {
   /* colours */
   --text: #ffffff;
-  --text-bold: #001aff; /* pick your bold colour */
+  --text-bold: #001aff;
   --text-bold-background: #ffffff;
   --bg: #eeeeee;
-  --link: #b48cff;
+  --link: #3700ff;
   --line: #cfcfd0;
-  --accent: #ffffff; /* quote stroke */
+  --accent: #ffffff;
+  --quote-background: linear-gradient(to right, #82ffe4, #5689ff);
+  --quote-text: #000000;
 
   /* fonts */
-  --font-body: "Cozette", monospace;
+  --font-body: monospace;
   --font-heading: "Monocraft", monospace;
 
   /* spacing */
   --pad-y: 9px;
   --pad-x: 12px;
+  --content-width: 720px;
 }
 
 body {
@@ -40,31 +43,53 @@ body {
   flex-direction: column; /* stack header, main, footer vertically */
   color: var(--text);
   background: url("/tiles/spacebackground.gif") repeat;
+  align-items: left;
 }
 
 b {
   color: var(--text-bold);
   background: var(--text-bold-background);
   padding: 3px 4px;
+  font-weight: bold;
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*vertical align*/
+  gap: 8px;
   padding: 9px 12px;
   border-bottom: 1px solid var(--line);
+  text-align: center;
 }
 
 main {
-  flex: 1; /* main takes all leftover space... */
+  flex: 1;
+  width: 100%;
+  max-width: var(--content-width); /* your 720px */
+  margin: 0 auto; /* center it */
   padding: 12px;
+  box-sizing: border-box;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*vertical align*/
+  gap: 8px;
+  padding: 9px 12px;
   padding: 9px 12px; /* ...which pushes the footer to the bottom */
+  font-size: 50px;
   border-top: 1px solid var(--line);
 }
 
 a {
   color: var(--link); /* normal */
+  padding: 20px;
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: monocraft;
 }
 
 h1 {
@@ -75,7 +100,17 @@ h1 {
 }
 
 blockquote {
-  margin: 0 0 20px; /* drop the browser's 40px side indent */
-  padding-left: 12px; /* space between stroke and text */
-  border-left: 3px solid var(--accent); /* the stroke */
+  margin: 0 0 20px;
+  padding: 12px;
+  border: 3px solid var(--accent);
+  background: var(--quote-background);
+  color: var(--quote-text);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
